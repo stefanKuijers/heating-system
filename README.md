@@ -9,10 +9,14 @@
 3. Install Extention For Arduino _vsciot-vscode.vscode-arduino_ and restart
 4. ```CMD + SHIFT + P``` _Arduino: initialize_
     - Fix missing inlcudes [github issue](https://github.com/microsoft/vscode-cpptools/issues/2610)
-        - Add to c_ccp_properties.json:includes "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/**"
+        - Add to c_ccp_properties.json:includePath 
+            - "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/**"
+            - "${workspaceFolder}/**"
         - Add define ```"defines": ["USBCON"]```
     
 
 ## Development 
 1. ```CMD + SHIFT + P``` > _Arduino: Select Serial_ and select the usbPort
-2. ```CMD + SHIFT + P``` > _Arduino: Upload_ 
+2. ```CMD + SHIFT + P``` > _Arduino: Change Baud Rate_ to be 9600
+3. Develop the code
+4. ```CMD + SHIFT + P``` > _Arduino: Upload_ 
