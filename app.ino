@@ -53,7 +53,7 @@ void loop()  {
 
   timesincelastpulse = millis();
 
-  thingSpeak.send(WH, Afgifte, ElgaAanvoerT, ElgaRetourT, COP);
+  thingSpeak.send(WH, Afgifte, ElgaAanvoerT, ElgaRetourT, COP, KWH);
 
   delay(120000);  // tijdelijk alleen voor test fase toepassen
 }
