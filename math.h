@@ -1,0 +1,3 @@
+/*
+    Math class for all calculations
+*/

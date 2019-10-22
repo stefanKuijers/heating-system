@@ -3,15 +3,18 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**",
+                "/Users/stefankuijers/Documents/Arduino/libraries/OneWire",
+                "/Users/stefankuijers/Documents/Arduino/libraries/DallasTemperature",
+                "/Users/stefankuijers/Documents/Arduino/libraries/Arduino_Uno_WiFi_Dev_Ed_Library/src",
                 "/Applications/Arduino.app/Contents/Java/tools/**",
                 "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/**",
+                "/Applications/Arduino.app/Contents/Java/hardware/arduino/**",
                 "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/**",
                 "/Users/davidjong/Library/Arduino15/packages/arduino/hardware/avr/1.8.1/**",
                 "/Users/davidjong/Library/Arduino15/packages/arduino/tools/**"
             ],
             "forcedInclude": [
-                "/Users/davidjong/Library/Arduino15/packages/arduino/hardware/avr/1.8.1/cores/arduino/Arduino.h"
+                "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h"
             ],
             "macFrameworkPath": [
                 "/System/Library/Frameworks",
@@ -22,7 +25,10 @@
             "cStandard": "c11",
             "cppStandard": "c++17",
             "defines": [
-                "USBCON"
+                "USBCON",
+                "ARDUINO=1810",
+                "__AVR_ATmega328P__",
+                "APIKEY_THINGSPEAK='RG3WGCNATYZLGW73'"
             ]
         }
     ],
